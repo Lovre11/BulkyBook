@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200703123613_AddShoppingCartOrderHeaderAndOrderDetailsToDB.cs" />
+    <Compile Remove="Migrations\20200703123613_AddShoppingCartOrderHeaderAndOrderDetailsToDB.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.35" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BulkyBook.Models\BulkyBook.Models.csproj" />
+    <ProjectReference Include="..\BulkyBook.Utility\BulkyBook.Utility.csproj" />
+  </ItemGroup>
+
+</Project>
